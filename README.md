@@ -12,3 +12,8 @@
 
 <label>Full Name</label><br>
 <input type="text" required><br><br>
+<label>Email Address</label><br>
+<input type="email" required><br><br><h2>Workshop</h2>
+<p>Full Stack Development Bootcamp</p>
+<p>Duration: 3 Days</p>
+<p>Fee: ₹999</p><h2>Payment Method</h2>
