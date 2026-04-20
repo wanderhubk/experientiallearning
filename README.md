@@ -35,3 +35,5 @@
 <input type="password"><br><br><input type="checkbox" required> Confirm details<br><br><button type="submit">Register</button>
 
 </form>
+</body>
+</html>
