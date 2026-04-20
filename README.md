@@ -9,7 +9,6 @@
 <body><h1>Workshop Registration</h1>
 <p>Final Step: Fill details and choose payment method</p><form>
 <h2>Participant Details</h2>
-
 <label>Full Name</label><br>
 <input type="text" required><br><br>
 <label>Email Address</label><br>
@@ -19,9 +18,7 @@
 <p>Fee: ₹999</p><h2>Payment Method</h2>
 <input type="radio" name="pay" checked> Credit Card<br>
 <input type="radio" name="pay"> Net Banking<br><br><h3>Credit Card Details</h3>
-
 <label>Card Number</label><br>
 <input type="text"><br><br>
-
 <label>Expiry</label><br>
 <input type="month"><br><br>
