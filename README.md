@@ -17,3 +17,11 @@
 <p>Full Stack Development Bootcamp</p>
 <p>Duration: 3 Days</p>
 <p>Fee: ₹999</p><h2>Payment Method</h2>
+<input type="radio" name="pay" checked> Credit Card<br>
+<input type="radio" name="pay"> Net Banking<br><br><h3>Credit Card Details</h3>
+
+<label>Card Number</label><br>
+<input type="text"><br><br>
+
+<label>Expiry</label><br>
+<input type="month"><br><br>
