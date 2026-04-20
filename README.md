@@ -22,3 +22,9 @@
 <input type="text"><br><br>
 <label>Expiry</label><br>
 <input type="month"><br><br>
+<label>CVV</label><br>
+<input type="password"><br><br><h3>Net Banking Details</h3>
+
+<label>Select Bank</label><br>
+<select>
+<option>SBI</option>
