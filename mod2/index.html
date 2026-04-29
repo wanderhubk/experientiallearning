@@ -4,44 +4,154 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Workshop Registration</title>
+
+   
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
     <link rel="stylesheet" href="style.css">
 </head>
-<body><h1>Workshop Registration</h1>
-<p>Final Step: Fill details and choose payment method</p><form>
+<body>
 
-<h2>Participant Details</h2>
+<div class="container py-5">
 
-<label>Full Name</label><br>
-<input type="text" required><br><br>
+    
+    <div class="text-center mb-4">
+        <h1>Workshop Registration</h1>
+        <p>Final Step: Fill details and choose payment method</p>
+    </div>
 
-<label>Email Address</label><br>
-<input type="email" required><br><br><h2>Workshop</h2>
-<p>Full Stack Development Bootcamp</p>
-<p>Duration: 3 Days</p>
-<p>Fee: ₹999</p><h2>Payment Method</h2>
+    <form id="registrationForm" class="mx-auto">
 
-<input type="radio" name="pay" checked> Credit Card<br>
-<input type="radio" name="pay"> Net Banking<br><br><h3>Credit Card Details</h3>
+      
+        <div class="card mb-4 shadow-sm border-0 rounded-4">
+            <div class="card-body">
+                <h2><i class="bi bi-person-circle"></i> Participant Details</h2>
 
-<label>Card Number</label><br>
-<input type="text"><br><br>
+                <div class="mb-3">
+                    <label for="fullname" class="form-label">Full Name</label>
+                    <input type="text" id="fullname" class="form-control" placeholder="Enter your full name" required>
+                </div>
 
-<label>Expiry</label><br>
-<input type="month"><br><br>
+                <div class="mb-3">
+                    <label for="email" class="form-label">Email Address</label>
+                    <input type="email" id="email" class="form-control" placeholder="Enter your email address" required>
+                </div>
+            </div>
+        </div>
 
-<label>CVV</label><br>
-<input type="password"><br><br><h3>Net Banking Details</h3>
+      
+        <div class="card mb-4 shadow-sm border-0 rounded-4">
+            <div class="card-body">
+                <h2><i class="bi bi-journal-code"></i> Workshop Details</h2>
 
-<label>Select Bank</label><br>
-<select>
-<option>SBI</option>
-<option>HDFC</option>
-<option>ICICI</option>
-</select><br><br><label>User ID</label><br>
-<input type="text"><br><br><label>Password</label><br>
-<input type="password"><br><br><input type="checkbox" required> Confirm details<br><br><button type="submit">Register</button>
+                <div class="alert alert-light border rounded-3 mt-3">
+                    <p><strong>Course Name:</strong> Full Stack Development Bootcamp</p>
+                    <p><strong>Duration:</strong> 3 Days Intensive Live Workshop</p>
+                    <p><strong>Trainer:</strong> Industry Expert Mentor</p>
+                    <p><strong>Certification:</strong> Included</p>
+                    <p><strong>Registration Fee:</strong> ₹999 Only</p>
+                </div>
+            </div>
+        </div>
 
-</form>
+        <div class="card mb-4 shadow-sm border-0 rounded-4">
+            <div class="card-body">
+                <h2><i class="bi bi-credit-card-2-front"></i> Payment Method</h2>
 
+                <div class="row mt-3">
+                    <div class="col-6">
+                        <div class="form-check border rounded p-3">
+                            <input class="form-check-input" type="radio" name="pay" id="credit" checked>
+                            <label class="form-check-label ms-2" for="credit">
+                                Credit Card
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="col-6">
+                        <div class="form-check border rounded p-3">
+                            <input class="form-check-input" type="radio" name="pay" id="netbanking">
+                            <label class="form-check-label ms-2" for="netbanking">
+                                Net Banking
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        
+        <div class="card mb-4 shadow-sm border-0 rounded-4" id="creditSection">
+            <div class="card-body">
+                <h3><i class="bi bi-credit-card"></i> Credit Card Details</h3>
+
+                <div class="mb-3">
+                    <label for="cardnumber" class="form-label">Card Number</label>
+                    <input type="text" id="cardnumber" class="form-control" placeholder="XXXX XXXX XXXX XXXX">
+                </div>
+
+                <div class="row">
+                    <div class="col-md-6 mb-3">
+                        <label for="expiry" class="form-label">Expiry Date</label>
+                        <input type="month" id="expiry" class="form-control">
+                    </div>
+
+                    <div class="col-md-6 mb-3">
+                        <label for="cvv" class="form-label">CVV</label>
+                        <input type="password" id="cvv" class="form-control" placeholder="123">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        
+        <div class="card mb-4 shadow-sm border-0 rounded-4" id="bankSection">
+            <div class="card-body">
+                <h3><i class="bi bi-bank"></i> Net Banking Details</h3>
+
+                <div class="mb-3">
+                    <label for="bank" class="form-label">Select Bank</label>
+                    <select id="bank" class="form-select">
+                        <option>SBI</option>
+                        <option>HDFC</option>
+                        <option>ICICI</option>
+                    </select>
+                </div>
+
+                <div class="mb-3">
+                    <label for="userid" class="form-label">User ID</label>
+                    <input type="text" id="userid" class="form-control" placeholder="Enter your banking user id">
+                </div>
+
+                <div class="mb-3">
+                    <label for="bankpass" class="form-label">Password</label>
+                    <input type="password" id="bankpass" class="form-control" placeholder="Enter your password">
+                </div>
+            </div>
+        </div>
+
+       
+        <div class="form-check mb-4">
+            <input class="form-check-input" type="checkbox" id="confirm" required>
+            <label class="form-check-label" for="confirm">
+                I confirm that all entered details are correct and I agree to proceed with registration.
+            </label>
+        </div>
+
+        <button type="submit" class="btn w-100">Complete Registration</button>
+
+       
+        <p class="text-center mt-3 small">
+            Secure Payment Gateway | SSL Protected Registration
+        </p>
+
+    </form>
+</div>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
